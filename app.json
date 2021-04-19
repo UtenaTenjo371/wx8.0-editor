@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/editor/editor",
+    "pages/collections/collections",
+    "pages/mine/mine"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#85dbd1",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "/images/icon/home.png",
+        "selectedIconPath": "/images/icon/home_active.png",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "text": "素材集",
+        "iconPath": "/images/icon/book.png",
+        "selectedIconPath": "/images/icon/book_active.png",
+        "pagePath": "pages/collections/collections"
+      },
+      {
+        "text": "我的",
+        "iconPath": "/images/icon/like.png",
+        "selectedIconPath": "/images/icon/heart_active.png",
+        "pagePath": "pages/mine/mine"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "微状态手工馆",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

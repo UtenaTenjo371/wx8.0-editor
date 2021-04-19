@@ -1,0 +1,66 @@
+<!--pages/collections/collections.wxml-->
+<view class="top-area">
+  <view class="searchbar">
+    <input type="text" placeholder="{{placeholder}}" value= bindchange="searchHandler"/>
+  </view>
+  <view class="filter">
+    <view class="filter-type">
+      <text>全部素材</text>
+      <block wx:for="{{type}}">
+        <text>{{item}}</text>
+      </block>
+    </view>
+    <view class="filter-tag">
+      <text>全部标签</text>
+      <block wx:for="{{tag}}">
+        <text>{{item}}</text>
+      </block>
+    </view>
+  </view>
+</view>
+<view class="waterfallFlow">
+  <view class="card">
+    <view class="display-area">
+      <image src="/images/banner4.jpg"></image>
+      <text class="img-text">微信状态最多63个字符</text>
+    </view>
+    <view>
+      <button class="btn-like" plain size="mini">
+        <image src="/images/icon/heart.png"></image>
+      </button>
+    </view>
+  </view>
+  <view class="card">
+    <view class="display-area">
+      <image src="/images/brothers.gif"></image>
+      <text class="img-text">微信状态最多63个字符</text>
+    </view>
+    <view>
+      <button class="btn-like" plain size="mini">
+        <image src="/images/icon/heart.png"></image>
+      </button>
+    </view>
+  </view>
+  <view class="card">
+    <view class="display-area">
+      <image src="/images/banner4.jpg"></image>
+      <text class="img-text">微信状态最多63个字符</text>
+    </view>
+    <view>
+      <button class="btn-like" plain size="mini">
+        <image src="/images/icon/heart.png"></image>
+      </button>
+    </view>
+  </view>
+  <view class="card">
+    <view class="display-area">
+      <image src="/images/brothers.gif"></image>
+      <text class="img-text">微信状态最多63个字符aaaaaaaaaaaaaaaaaa</text>
+    </view>
+    <view>
+      <button class="btn-like" plain size="mini">
+        <image src="/images/icon/heart.png"></image>
+      </button>
+    </view>
+  </view>
+</view>

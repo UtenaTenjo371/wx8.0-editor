@@ -1,0 +1,25 @@
+<!--pages/home/home.wxml-->
+<view class="swiper-card">
+  <swiper autoplay="true">
+    <block wx:for="{{galleries}}">
+      <swiper-item>
+        <view class="swiper-img"><image src="{{item.imgsrc}}"></image></view>
+        <text class="img-title">{{item.title}}</text>
+        <view>
+          <button class="img-button btn-like" style="padding:0;border:none;" plain size="mini"><image src="/images/icon/heart.png"></image></button>
+          <button class="img-button btn-download" style="padding:0;border:none;" plain size="mini"><image src="/images/icon/download.png"></image></button>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/collections/collections" class="tab-button" open-type="switchTab">
+    <image src="/images/icon/book.png"></image>
+    <text>更多素材</text>
+  </navigator>
+  <navigator url="/pages/editor/editor" class="tab-button" open-type="switchTab">
+    <image src="/images/icon/scissors.png"></image>
+    <text>状态编辑器</text>
+  </navigator>
+</view>
