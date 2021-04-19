@@ -1,0 +1,3 @@
+<!--pages/editor/editor.wxml-->
+<text>pages/editor/editor.wxml</text>
+<text>{{id}}</text>

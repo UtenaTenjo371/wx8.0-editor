@@ -1,0 +1,40 @@
+<view class="userInfo">
+  <block wx:if="{{!hasUserInfo}}">
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">微信登录</button>
+    <view wx:else>请升级微信版本</view>
+  </block>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-uid">uid:{{userInfo.uid}}</text>
+    <text>{{uid}}</text>
+  </block>
+</view>
+<view class="filter">
+  <view class="filter-type">
+    <text>全部素材</text>
+    <block wx:for="{{type}}">
+      <text>{{item}}</text>
+    </block>
+  </view>
+  <view class="filter-tag">
+    <text>全部标签</text>
+    <block wx:for="{{tag}}">
+      <text>{{item}}</text>
+    </block>
+  </view>
+</view>
+<!--瀑布流展示-->
+<view class="waterfallFlow">
+  <view class="card">
+    <view class="display-area">
+      <image src="/images/banner4.jpg"></image>
+      <text class="img-text">微信状态最多63个字符</text>
+    </view>
+    <view>
+      <button class="btn-like" plain size="mini">
+        <image src="/images/icon/heart.png"></image>
+      </button>
+    </view>
+  </view>
+</view>
